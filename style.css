@@ -2,3 +2,11 @@
     width: 70px;
     border-radius: 20px;
 }
+
+body{
+    background-image: url(assets/back1.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
