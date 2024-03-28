@@ -22,7 +22,7 @@
       const credential = GoogleAuthProvider.credentialFromResult(result);
       const user = result.user;
       console.log(user);
-      window.location.href = "../index.html"
+      window.location.href = "../logged.html"
 
     }).catch((error) => {
       const errorCode = error.code;
@@ -31,3 +31,14 @@
 
   })
 
+function updateUserProfile(user){
+  const userName = user.displayName;
+  const userEmail = user.userEmail;
+  const userProfilePicture = user.photoURL;
+
+  document.getElementById("userName").textContent = userName;
+  document.getElementById("userEmail").textContent = userEmail;
+  document.getElementById("userProfilePicture").src = userProfilePicture;
+}
+
+updateUserProfile();
