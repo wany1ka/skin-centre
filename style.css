@@ -8,11 +8,26 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  
+  padding-right: 50px;
 }
 
 * {
   box-sizing: border-box;
 }
+
+/* home page */
+
+#welcome, .description{
+  text-align: right;
+}
+
+/* blog page */
 
 
 /* Float four columns side by side */
