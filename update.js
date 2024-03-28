@@ -18,12 +18,11 @@ const user = auth.currentUser;
 function updateUserProfile(user) {
     const userName = user.displayName;
     const userEmail = user.email;
-    const userProfilePicture = user.photoURL;
+
     console.log(userEmail)
 
     document.getElementById("userName").textContent = userName;
     document.getElementById("userEmail").textContent = userEmail;
-    document.getElementById("userProfilePicture").src = userProfilePicture;
 }
 
 onAuthStateChanged(auth, (user) => {
