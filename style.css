@@ -70,3 +70,16 @@ body {
 #more {
   display: none;
 }
+
+/* for services tab */
+#searchInput {
+  padding: 8px;
+  width: 300px;
+  font-size: 16px;
+  display: block;
+  margin: 50px;
+  margin-left: 400px;
+}
+#searchResults {
+  margin-top: 10px;
+}
