@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Example</title>
+</head>
+<body>
+    <script>
+        const url = 'https://iterar-mapi-us.p.rapidapi.com/api/reserpine/substances.json';
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '85b4f940efmshd3c582c78562612p1e9c6cjsnbdb9c273c549',
+                'X-RapidAPI-Host': 'iterar-mapi-us.p.rapidapi.com'
+            }
+        };
+
+        async function fetchData() {
+            try {
+                const response = await fetch(url, options);
+                const result = await response.text();
+                console.log(result);
+                // Do something with the result here, like updating the HTML content
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        // Call the function to fetch data when the page loads
+        window.onload = fetchData;
+    </script>
+</body>
+</html>

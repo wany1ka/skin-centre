@@ -3,6 +3,14 @@
   border-radius: 20px;
 }
 
+.about, ol{
+  margin-left: 50px;
+}
+
+iframe{
+  margin-left: 250px;
+}
+
 body {
   background-image: url(assets/back1.avif);
   background-position: center;
@@ -15,6 +23,7 @@ body {
   font-style: normal;
   
   padding-right: 50px;
+  padding-left: 50px;
 }
 
 * {
@@ -25,6 +34,26 @@ body {
 
 #welcome, .description{
   text-align: right;
+}
+
+.slide.active {
+  display: block;
+}
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
 }
 
 /* blog page */
