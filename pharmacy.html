@@ -3,75 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Website</title>
+    <title>Image Slider</title>
     <link rel="stylesheet" href="pharmacy.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Medical Clinic</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Welcome to Our Clinic</h2>
-            <p>Providing quality healthcare services to our community.</p>
-            <a href="#" class="btn">Book an Appointment</a>
-        </div>
-    </section>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="assets/cream.avif" style="width:100%">
+        <div class="text">cjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</div>
+    </div>
 
-    <section class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service">
-                <h3>Primary Care</h3>
-                <p>Comprehensive primary care services for individuals and families.</p>
-            </div>
-            <div class="service">
-                <h3>Specialized Treatments</h3>
-                <p>Advanced treatments and therapies for specific medical conditions.</p>
-            </div>
-        </div>
-    </section>
+    <div class="mySlides fade">
+        <img src="assets/la-roche.avif" style="width:100%">
+        <div class="text">Slide 2 Text</div>
+    </div>
 
-    <section class="gallery">
-        <div class="container">
-            <h2>Gallery</h2>
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="assets/anti aging.png" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="assets/cryotherapy.jpg" style="width:100%">
-                </div>
-                <!-- Add more slides as needed -->
-            </div>
-            <br>
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <!-- Add more dots for each slide -->
-            </div>
-        </div>
-    </section>
+    <div class="mySlides fade">
+        <img src="assets/the ordinary.avif" style="width:100%">
+        <div class="text">Slide 3 Text</div>
+    </div>
 
-    <!-- Other sections such as About Us, Testimonials, Contact, etc. -->
+    <!-- Add more slides as needed -->
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Medical Clinic. All rights reserved.</p>
-        </div>
-    </footer>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
 
-    <script src="pharmacy.js"></script>
+<script src="pharmacy.js"></script>
 </body>
 </html>

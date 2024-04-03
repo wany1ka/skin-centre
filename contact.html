@@ -36,34 +36,36 @@
 
     <hr>
 
-    <form action="https://formspree.io/f/mvoewoae" method="POST" style="text-align: center;">
-        <label>
-            First Name:
-            <input type="text" name="first_name">
-        </label>
-
-        <label>
-            Last Name:
-            <input type="text" name="last_name">
-        </label> <br><br>
-
-        <label>
-            Your email:
-            <input type="email" name="email">
-        </label> <br><br>
-
-        <label>
-            Subject:
-            <input type="text" name="title">
-        </label> <br>
-
-        <label>
-            Your message:
-            <textarea name="message" style="width: 385px;"></textarea>
-        </label>
-
-        <button type="submit">Send</button>
-    </form>
+    <div class="container" style="display: flex; align-items: center;">
+      <div class="right-img">
+        <img src="assets/doctor form.jpg" alt="" width="300px" style="flex: 1;">
+      </div>
+      <div class="form">
+        <form action="https://formspree.io/f/mvoewoae" method="POST" style="flex: 1; text-align: center; padding: 0 20px;">
+            <label>
+                First Name:
+                <input type="text" name="first_name">
+            </label>
+            <label>
+                Last Name:
+                <input type="text" name="last_name">
+            </label> <br><br>
+            <label>
+                Your email:
+                <input type="email" name="email">
+            </label> <br><br>
+            <label>
+                Subject:
+                <input type="text" name="title">
+            </label> <br>
+            <label>
+                Your message:
+                <textarea name="message" style="width: 385px;"></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
 </body>
 
 <hr>

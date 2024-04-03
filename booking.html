@@ -30,35 +30,42 @@
     </div>
 <hr>
 
-    <form
-  action="https://formspree.io/f/mwkgrkad"
-  method="POST"
-  style="text-align: center;"
->
-<label>
-    First Name:
-    <input type="text" name="first_name" required>
-  </label>
-  <label>
-    Last Name:
-    <input type="text" name="last_name" required>
-  </label> <br><br>
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label> <br><br>
-  <label>
-    Date:
-    <input type="date" name="date" required>
-  </label> <br><br>
-
-  <label>
-    Reason:
-    <textarea name="message" placeholder="Reason for visit (optional)" style="width: 500px; height: 100px;"></textarea>
-  </label> <br><br>
-  <!-- your other form fields go here -->
-  <button type="submit">Schedule</button>
-</form>  
+    <div class="container" style="display: flex; align-items: center;">
+      <div class="img">
+        <img src="assets/talkingdoc.avif" alt=""  width="400px" height="400px" style="flex: 1;">
+      </div>
+      <div class="form">
+        <form
+          action="https://formspree.io/f/mwkgrkad"
+          method="POST"
+          style="text-align: center; flex: 1; text-align: center; padding: 0 20px;"
+        >
+        <label>
+        First Name:
+        <input type="text" name="first_name" required>
+          </label>
+          <label>
+        Last Name:
+        <input type="text" name="last_name" required>
+          </label> <br><br>
+          <label>
+        Your email:
+        <input type="email" name="email">
+          </label> <br><br>
+          <label>
+        Date:
+        <input type="date" name="date" required>
+          </label> <br><br>
+        
+          <label>
+        Reason:
+        <textarea name="message" placeholder="Reason for visit (optional)" style="width: 500px; height: 100px;"></textarea>
+          </label> <br><br>
+          <!-- your other form fields go here -->
+          <button type="submit">Schedule</button>
+        </form>
+      </div>
+    </div>
 
     Insurance Recognition <br>
 AAR,

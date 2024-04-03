@@ -59,41 +59,34 @@ body {
 /* blog page */
 
 
-/* Float two columns side by side */
-.column {
-  float: left;
-  width: 50%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
 .row {
-  margin: 0 -5px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
-/* Clear floats after the columns */
-.row:after {
+
+.column {
+  width: calc(550px); /*Adjust the width as needed */
+  display: inline-block;
+  margin-right: 20px; /* Add some right margin for spacing */
+  vertical-align: top; /* Align columns to the top */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+
+}
+
+/* Clear the float to prevent layout issues */
+.row::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: black;
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-  border-radius: 20px;
+.card{
+  border-width: 2px;
+  border-color: gray;
+  border-radius: 10px;
 }
 
 
@@ -108,25 +101,4 @@ body {
 }
 #searchResults {
   margin-top: 10px;
-}
-
-/* slideshow */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-  display: none;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
