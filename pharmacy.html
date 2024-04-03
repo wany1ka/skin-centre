@@ -3,32 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch API Example</title>
+    <title>Medical Website</title>
+    <link rel="stylesheet" href="pharmacy.css">
 </head>
 <body>
-    <script>
-        const url = 'https://iterar-mapi-us.p.rapidapi.com/api/reserpine/substances.json';
-        const options = {
-            method: 'GET',
-            headers: {
-                'X-RapidAPI-Key': '85b4f940efmshd3c582c78562612p1e9c6cjsnbdb9c273c549',
-                'X-RapidAPI-Host': 'iterar-mapi-us.p.rapidapi.com'
-            }
-        };
+    <header>
+        <div class="container">
+            <h1>Medical Clinic</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        async function fetchData() {
-            try {
-                const response = await fetch(url, options);
-                const result = await response.text();
-                console.log(result);
-                // Do something with the result here, like updating the HTML content
-            } catch (error) {
-                console.error(error);
-            }
-        }
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Our Clinic</h2>
+            <p>Providing quality healthcare services to our community.</p>
+            <a href="#" class="btn">Book an Appointment</a>
+        </div>
+    </section>
 
-        // Call the function to fetch data when the page loads
-        window.onload = fetchData;
-    </script>
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Primary Care</h3>
+                <p>Comprehensive primary care services for individuals and families.</p>
+            </div>
+            <div class="service">
+                <h3>Specialized Treatments</h3>
+                <p>Advanced treatments and therapies for specific medical conditions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="assets/anti aging.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/cryotherapy.jpg" style="width:100%">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <!-- Add more dots for each slide -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Other sections such as About Us, Testimonials, Contact, etc. -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Medical Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="pharmacy.js"></script>
 </body>
 </html>

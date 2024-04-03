@@ -1,35 +1,32 @@
-function readMore() {
-  let dots = document.getElementById("cut1");
-  let moreText = document.getElementById("more1");
-  let btnText = document.getElementById("btwn1");
+function toggleReadMore(moreId, cutId, buttonId) {
+  var moreText = document.getElementById(moreId);
+  var cutText = document.getElementById(cutId);
+  var btnText = document.getElementById(buttonId);
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
+  if (moreText.style.display === "none") {
     moreText.style.display = "inline";
-  }
-}
-// readMore();
-
-function readMore() {
-  let dots = document.getElementById("cut2");
-  let moreText = document.getElementById("more2");
-  let btnText = document.getElementById("btwn2");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
+    cutText.style.display = "none";
+    btnText.innerHTML = "Read less";
   } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
+    moreText.style.display = "none";
+    cutText.style.display = "inline";
+    btnText.innerHTML = "Read more";
   }
+  btnText.style.display = "inline"; // Show the button after click
 }
-readMore();
 
 
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
