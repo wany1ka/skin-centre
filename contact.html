@@ -36,36 +36,38 @@
 
     <hr>
 
-    <div class="container" style="display: flex; align-items: center;">
-      <div class="right-img">
-        <img src="assets/doctor form.jpg" alt="" width="300px" style="flex: 1;">
-      </div>
+    <div class="contact" id="contact" style="background-color: #F0F0F0; padding: 50px; border-radius: 50px; background: linear-gradient(to left, #0466c8, #979dac);">
+      <h1 style="text-align: center;">Contact Us</h1>
+    
+      <img src="assets/trial5.jpeg" width="450px" height="420px" alt="" style="float: left; border-radius: 20px;">
       <div class="form">
-        <form action="https://formspree.io/f/mvoewoae" method="POST" style="flex: 1; text-align: center; padding: 0 20px;">
-            <label>
-                First Name:
-                <input type="text" name="first_name">
-            </label>
-            <label>
-                Last Name:
-                <input type="text" name="last_name">
-            </label> <br><br>
-            <label>
-                Your email:
-                <input type="email" name="email">
-            </label> <br><br>
-            <label>
+          <form action="https://formspree.io/f/mvoewoae" method="POST">
+            <label style="margin: 10px;">
+              First Name:
+              <input type="text" name="first_name" required>
+                </label>
+                <label style="margin: 10px;">
+              Last Name:
+              <input type="text" name="last_name" required>
+                </label> <br><br>
+                <label style="margin: 10px;">
+              Email:
+              <input type="email" name="email">
+                </label> <br><br>
+              <label style="margin: 10px;"></label>
                 Subject:
-                <input type="text" name="title">
-            </label> <br>
-            <label>
-                Your message:
-                <textarea name="message" style="width: 385px;"></textarea>
-            </label>
-            <button type="submit">Send</button>
-        </form>
+                <input type="text" name="subject">
+              </label> <br><br>
+                
+              <label style="margin: 10px;">
+              Message:
+              <textarea name="message" placeholder="what do you have to say?" style="width: 500px; height: 100px;"></textarea>
+                </label> <br><br> 
+                 <button type="submit" style="margin-left: 250px; border-radius: 10px;">Submit</button> <br><br>
+          </form>
       </div>
     </div>
+
 </body>
 
 <hr>
