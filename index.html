@@ -8,11 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Home Page</title>
     <link rel="icon" href="assets/skin logo.jpeg" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="main.js" defer type="module"></script>
-    <script src="update.js" defer type="module"></script>
-    <script src="script.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -26,35 +23,21 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="#">Home</a>
-                  <a class="nav-link" href="about.html">About</a>
-                  <a class="nav-link" href="services.html">Services</a>
-                  <a class="nav-link" href="booking.html">Booking</a>
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </div>
-              </div>
             </div>
           </nav>
     </div>
 
   </head>
-  <hr>
   <body>
 
-    <h6>logged in as</h6>
-    <h6 id="userName"></h6>
-    <!-- <h6 id="userEmail"></h6> -->
+  <div class="input">
+    <button id="google-login-btn" class="google-button" style=  "background: linear-gradient(to left, #F65314, #00A1F1); margin: 100px; margin-left: 200px; padding: 20px;">
+      Login with <i class="fa fa-google" aria-hidden="true"></i>
+    </button>
+  </div>
 
-    <div>
-      <h2 id="welcome">THE RIGHT DERMATOLOGIST</h2> <br>
-      <p class="description"> At Skin Centre, your skin is the center of our attention</p>
-    </div>
-  
+
 </body>
-
-
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-body-tertiary text-muted">
@@ -75,43 +58,6 @@
               Monday - Friday: 8.00a.m - 5.00p.m
               Saturday: 8.00a.m - 1.00p.m <br>
               Sunday & Holidays: Closed
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Services
-            </h6>
-            <p>
-              <a href="booking.html" class="text-reset">Consultation</a>
-            </p>
-            <p>
-              <a href="services.html" class="text-reset">Medical Procedures</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Pharmacy</a>
-            </p>
-
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Useful links
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Pricing</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Certificatons</a>
-            </p>
-            <p>
-                <a href="blog.html" class="text-reset">Blog</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -140,7 +86,7 @@
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2024 Copyright:
-      <a class="text-reset fw-bold" href="#">Skin Centre</a>
+      <a class="text-reset fw-bold" >Skin Centre</a>
     </div>
     <!-- Copyright -->
   </footer>
