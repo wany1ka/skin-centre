@@ -14,11 +14,80 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
+<style>
+  .booking {
+    padding: 20px 100px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .booking .form {
+    width: 50%;
+    margin: 30px;
+  }
+
+  .booking .form h1 {
+    text-align: center;
+  }
+
+  .booking .form .inputBox {
+    margin: 10px 0;
+  }
+
+  .booking .form .inputBox p {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  .booking .form .inputBox input,
+  .booking .form .inputBox textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    background-color: #abc4ff;
+    color: #03045e;
+    min-height: 15px;
+    font-size: 1.1em;
+  }
+
+  .booking .form .inputBox textarea {
+    height: 150px;
+  }
+
+  .booking .form .inputBox input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    outline: none;
+    background: transparent;
+    border: 2px solid;
+    text-decoration: none;
+    font-weight: 700;
+    width: 150px;
+    border-radius: 5px;
+    color: #354584;
+    letter-spacing: 1px;
+  }
+
+  .booking .form .inputBox input[type="submit"]:hover {
+    background-color: #b9d6f2;
+    border: none;
+    color: #061a40;
+    box-shadow: 0 0 10px #006daa;
+  }
+</style>
+
 <body>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light mt-3">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="skin-centre-logo" src="assets/skin logo.jpeg" alt=""></a>
+        <a class="navbar-brand" href="index2.html"><img class="skin-centre-logo" src="assets/skin logo.jpeg" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,9 +104,10 @@
       </div>
     </nav>
   </div>
+
   <hr>
 
-  <div class="contact" id="contact"
+  <!-- <div class="contact" id="contact"
     style="background-color: #F0F0F0; padding: 50px; border-radius: 50px; background: linear-gradient(to right, #ffffff, #979dac);">
     <h1 style="text-align: center;">Book an Appointment</h1>
 
@@ -74,9 +144,45 @@
         <button type="submit" style="margin-left: 250px; border-radius: 20px;">Schedule</button> <br><br>
       </form>
     </div>
+  </div> -->
+
+  <div>
+    <div class="container" id="videos-container"></div>
+    <form action="https://formspree.io/f/mwkgrkad" method="POST">
+      <div class="booking" id="contact">
+
+        <img src="assets/trial4.jpg" alt="" width="500" height="500">
+
+        <div class="form">
+
+          <h1>Book An Appointment</h1>
+
+          <div class="inputBox">
+            <p>Enter Name</p>
+            <input type="text" placeholder="Full Name..." required>
+          </div>
+
+          <div class="inputBox">
+            <p>Age</p>
+            <input type="number">
+          </div>
+
+          <div class="inputBox">
+            <p>Date</p>
+            <input type="date">
+          </div>
+
+          <div class="inputBox">
+            <p>Reason</p>
+            <textarea placeholder="Reason for visit (optional)" required></textarea>
+          </div>
+
+          <div class="inputBox">
+            <input type="Submit" name="Submit">
+          </div>
+        </div>
+    </form>
   </div>
-
-
 
   Insurance Recognition <br>
   AAR,
