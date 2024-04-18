@@ -1,5 +1,5 @@
       // JavaScript Functionality
-      const searchInput = document.getElementById('searchInput');
+      const searchServicesInput = document.getElementById('searchServicesInput');
       const searchResults = document.getElementById('searchResults');
   
       // Sample data
@@ -70,8 +70,8 @@
       }
   
       // Event listener for input changes
-      searchInput.addEventListener('input', () => {
-        const searchTerm = searchInput.value.trim();
+      searchServicesInput.addEventListener('input', () => {
+        const searchTerm = searchServicesInput.value.trim();
         const filteredData = filterData(searchTerm);
         displayResults(filteredData);
       });
