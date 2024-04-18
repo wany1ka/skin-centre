@@ -1,8 +1,6 @@
-      // JavaScript Functionality
       const searchServicesInput = document.getElementById('searchServicesInput');
       const searchResults = document.getElementById('searchResults');
   
-      // Sample data
       const data = [
 
      "General Dermatology Services in Adults and Adolescents",
@@ -46,14 +44,14 @@
      "Allergy tests"
     ];
   
-       // Function to filter data based on search input
+ // filters data based on search input
       function filterData(searchTerm) {
         return data.filter(item =>
           item.toLowerCase().includes(searchTerm.toLowerCase())
         );
       }
   
-      // Function to display search results
+// displays search results
       function displayResults(results) {
         searchResults.innerHTML = ''; // Clear previous results
   
