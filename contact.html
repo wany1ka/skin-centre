@@ -16,6 +16,67 @@
   <link rel="icon" href="assets/skin logo.jpeg" type="image/png">
 </head>
 
+<style>
+  .contact {
+    padding: 20px 100px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .form{
+    width: 50%;
+    margin: 30px;
+}
+.contact .form h1{
+  text-align: center;
+}
+.contact .form .inputBox{
+    margin: 10px 0;
+}
+.contact .form .inputBox p{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.contact .form .inputBox input,
+.contact .form .inputBox textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    background-color: #ccdbfd;
+    color: #19233e;
+    min-height: 15px;
+    font-size: 1.1em;
+}
+.contact .form .inputBox textarea{
+    height: 150px;
+}
+.contact .form .inputBox input[type="submit"]{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    outline: none;
+    background: transparent;
+    border: 2px solid ;
+    text-decoration: none;
+    font-weight: 700;
+    width: 150px;
+    border-radius: 5px;
+    color: #354584;
+    letter-spacing: 1px;
+}
+.contact .form .inputBox input[type="submit"]:hover{
+    background-color: #ade8f4;
+    border: none;
+    color: #00b4d8;
+    box-shadow: 0 0 10px #011460;
+}
+</style>
+
 <body>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light mt-3">
@@ -40,7 +101,7 @@
 
   <hr>
 
-  <div class="contact" id="contact"
+  <!-- <div class="contact" id="contact"
     style="background-color: #F0F0F0; padding: 50px; border-radius: 50px; background: linear-gradient(to left, #0466c8, #979dac);">
     <h1 style="text-align: center;">Contact Us</h1>
 
@@ -78,7 +139,47 @@
         <button type="submit" style="margin-left: 550px; border-radius: 10px;">Submit</button> <br><br>
       </form>
     </div>
-  </div>
+  </div> -->
+
+  <div>
+    <div class="container" id="videos-container"></div>
+    <form action="https://formspree.io/f/mvoewoae" method="POST">
+    <div class="contact" id="contact">
+
+        <img src="assets/trial5.jpeg" alt="" width="500" height="500">
+
+        <div class="form">
+
+            <h1>Contact Us</h1>
+
+            <div class="inputBox">
+                <p>Enter Name</p>
+                <input type="text" placeholder="Full Name..." required>
+            </div>
+
+            <div class="inputBox">
+                <p>Enter Email</p>
+                <input type="text" placeholder="Email Address..." required>
+            </div>
+
+            <div class="inputBox">
+                <p>Subject</p>
+                <input type="text" placeholder="Subject">
+            </div>
+
+            <div class="inputBox">
+                <p>Message</p>
+                <textarea placeholder="What do you have to say?" required></textarea>
+            </div>
+
+            <div class="inputBox">
+                <input type="Submit" name="Submit">
+            </div>
+
+            </form>
+        </div>
+    </div>
+    <div>
 
 </body>
 
